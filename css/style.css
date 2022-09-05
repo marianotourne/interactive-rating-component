@@ -97,7 +97,7 @@ body {
   cursor: pointer;
   font-size: 1.3rem;
   background: var(--darkblue);
-  opacity: 0.4;
+  /* opacity: 0.8; */
 }
 
 .initial-state ul li:hover {
@@ -160,7 +160,7 @@ body {
   text-align: center;
 }
 
-.final-state .selection{
+.final-state .selection {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,4 +182,13 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 376px) {
+  body {
+    width: 100vh;
+  }
+  .main-container {
+    width: 350px;
+  }
 }
