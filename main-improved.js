@@ -25,11 +25,13 @@ scoreOptionList.forEach((scoreOption) => {
 });
 
 function onSubmitForm() {
-  const initialState = document.querySelector(".initial-state");
-  const finalState = document.querySelector(".final-state");
-  const selection = document.querySelector(".selection");
-
-  initialState.classList.add("hidden");
-  finalState.classList.remove("hidden");
-  selection.innerText = `You selected ${selectedScoreOption} out of 5`;
+ if (submitBtn.classList.contains("active")){
+	  const initialState = document.querySelector(".initial-state");
+	  const finalState = document.querySelector(".final-state");
+	  const selection = document.querySelector(".selection");
+	
+	  initialState.classList.add("hidden");
+	  finalState.classList.remove("hidden");
+	  selection.innerText = `You selected ${selectedScoreOption} out of 5`;
+  }
 }
